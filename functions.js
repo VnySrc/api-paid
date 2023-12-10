@@ -7,6 +7,7 @@ moment.tz.setDefault('America/Sao_Paulo');
 moment.locale("pt-br");
 
 const bot = new Telegraf("6940234314:AAG6JI0LQYmSv4KJ_pkhFczGH3OODjhYuEE");
+
 export async function sendMsg(name, quantity, email, phone, cpf) {
     try {
         quantity = quantity / 100
@@ -30,5 +31,4 @@ export async function sendMsg(name, quantity, email, phone, cpf) {
     }catch (err) {
             console.log(err)
      }
-     
 }
