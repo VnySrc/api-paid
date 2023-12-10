@@ -24,6 +24,7 @@ app.post("/", async (req, res) => {
 app.get("/*", (req, res) => {
     res.send("Rota inexistente")
 })
+
 server.listen(process.env.PORT, () => {
     console.log(`Api de sinais rodando na porta: ${process.env.PORT}`)
 })
