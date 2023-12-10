@@ -5,7 +5,7 @@ import { sendMsg } from "./functions.js"
 const app = express()
 const server = http.createServer(app)
 
-app.post("/hook", async (req, res) => {
+app.post("/", async (req, res) => {
     console.log(req)
     const data = req.body.data
     
