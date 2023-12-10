@@ -23,7 +23,6 @@ export async function sendMsg(name, quantity, email, phone, cpf) {
 //  📄 CPF: ${cpf}
 //  🕗 Hora: ${moment().format("LLLL")}
 //  💰 Saldo do site: ${siteBalance}
-// 💰 Saldo do usuário: ${balance}
         await bot.telegram.sendMessage("@notificyvegas", msg, {
             parse_mode: "HTML",
         });
