@@ -16,15 +16,14 @@ export async function sendMsg(name, quantity, email, phone, cpf) {
         quantity = quantity / 100
         const msg = `
 ✅ 💵NOVO CPA NO VALOR DE R$${quantity} ✅ 
-✅ 💵NOVO CPA NO VALOR DE X 💵 ✅
-💵 Valor: ${quantity}
- 
-🕗 Hora: ${moment().format("LLLL")}
+
 ⭐️ Nome: ${name}
 🔥 E-mail: ${email}
 📱 Numero: ${phone}
 📄 CPF: ${cpf}
  `
+
+//  🕗 Hora: ${moment().format("LLLL")}
 //  💰 Saldo do site: ${siteBalance}
 // 💰 Saldo do usuário: ${balance}
         await bot.telegram.sendMessage("@notificyvegas", msg, {
