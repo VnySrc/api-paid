@@ -10,9 +10,6 @@ const bot = new Telegraf("6940234314:AAG6JI0LQYmSv4KJ_pkhFczGH3OODjhYuEE");
 
 export async function sendMsg(name, quantity, email, phone, cpf) {
     try {
-        // const keyboard = Markup.inlineKeyboard([
-        //     Markup.button.url('📱 Você é novo aqui? CLIQUE AQUI!', 'https://t.me/c/2051127316/37'),
-        // ]);
         quantity = quantity / 100
         const msg = `
 ✅NOVO CPA NO VALOR DE R$${quantity}💵
