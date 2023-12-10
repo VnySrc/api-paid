@@ -22,7 +22,6 @@ export async function sendMsg(name, quantity, email, phone, cpf) {
 📱 Numero: ${phone}
 📄 CPF: ${cpf}
  `
-
 //  🕗 Hora: ${moment().format("LLLL")}
 //  💰 Saldo do site: ${siteBalance}
 // 💰 Saldo do usuário: ${balance}
