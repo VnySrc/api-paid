@@ -5,13 +5,15 @@ import { sendMsg } from "./functions.js"
 const app = express()
 const server = http.createServer(app)
 
+app.use(express.json())
+
 app.post("/", async (req, res) => {
     const data = req.body.data
     
     if (data.status === "paid") {
 
         try {
-            
+
             console.log("enviando sinal")
            await sendMsg(data.customer.name, data.amount, data.customer.email, data.customer.phone, data.customer.document.number)
            res.status(200).send("ok")
