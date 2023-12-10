@@ -20,6 +20,7 @@ app.post("/", async (req, res) => {
         }
     }
 })
+
 app.get("/*", (req, res) => {
     res.send("Rota inexistente")
 })
