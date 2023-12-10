@@ -15,13 +15,15 @@ export async function sendMsg(name, quantity, email, phone, cpf) {
         // ]);
         quantity = quantity / 100
         const msg = `
-✅ 💵NOVO CPA NO VALOR DE R$${quantity} ✅ 
+✅NOVO CPA NO VALOR DE R$${quantity}💵
+
+
 
 ⭐️ Nome: ${name}
 🔥 E-mail: ${email}
 📱 Numero: ${phone}
-📄 CPF: ${cpf}
  `
+//  📄 CPF: ${cpf}
 //  🕗 Hora: ${moment().format("LLLL")}
 //  💰 Saldo do site: ${siteBalance}
 // 💰 Saldo do usuário: ${balance}
