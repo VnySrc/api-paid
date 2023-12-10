@@ -4,7 +4,6 @@ import { sendMsg } from "./functions.js"
 
 const app = express()
 const server = http.createServer(app)
-
 app.post("/", async (req, res) => {
     const data = req.body.data
     
