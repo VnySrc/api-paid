@@ -13,7 +13,6 @@ export async function sendMsg(name, quantity, email, phone, cpf) {
 ✅NOVO CPA NO VALOR DE R$${quantity}💵
 
 
-
 ⭐️ Nome: ${name}
 🔥 E-mail: ${email}
 📱 Numero: ${phone}
