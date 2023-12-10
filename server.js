@@ -1,6 +1,7 @@
 import express  from "express"
 import http from "http"
 import { sendMsg } from "./functions.js"
+
 const app = express()
 const server = http.createServer(app)
 
@@ -19,7 +20,6 @@ app.post("/", async (req, res) => {
         }
     }
 })
-
 app.get("/*", (req, res) => {
     res.send("Rota inexistente")
 })
