@@ -12,14 +12,7 @@ export async function sendMsg(name, quantity, email, phone, cpf) {
     try {
         quantity = quantity / 100
         const msg = `
-✅NOVO CPA NO VALOR DE R$${quantity}💵
-
-
-
-⭐️ Nome: ${name}
-🔥 E-mail: ${email}
-📱 Numero: ${phone}
- `
+✅NOVO CPA NO VALOR DE R$${quantity}💵`
 //  📄 CPF: ${cpf}
 //  🕗 Hora: ${moment().format("LLLL")}
 //  💰 Saldo do site: ${siteBalance}
